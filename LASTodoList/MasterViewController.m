@@ -37,10 +37,11 @@
 }
 
 - (void)refresh {
+    // Create a query object for all Todo object order by seq number descending.
     LASQuery *query = [LASQuery queryWithClassName:@"Todo"];
     [query orderByDescending:@"seq"];
     
-    // fetch all Todo objects
+    // Run the query
     [LASQueryManager findObjectsInBackgroundWithQuery:query block:^(NSArray *objects, NSError *error) {
         self.objects = [objects mutableCopy];
         [self.tableView reloadData];
@@ -55,6 +56,7 @@
         self.objects = [[NSMutableArray alloc] init];
     }
     
+    // Create an object with class name "Todo"
     LASObject *object = [LASObject objectWithClassName:@"Todo"];
     object[@"text"] = @"Sample Text";
     object[@"seq"] = @([[(LASObject *)self.objects.firstObject objectForKey:@"seq"] integerValue] + 1);
