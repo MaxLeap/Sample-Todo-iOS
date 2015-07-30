@@ -1,24 +1,24 @@
 # LAS-Sample-Todo-iOS
 
-## 介绍
+## Overview
 
-这个项目介绍如何使用 LAS 展示一个列表，并向其中添加或者删除元素。
+This project teaches you how to display a list, add or delete an element using LAS.
 
-## 演示功能
+## Features
 
-- 创建 LASObject
-- 查询 LASObject
-- 删除 LASObject
+- Create LASObject
+- Search LASObject
+- Delete LASObject
 
-## 效果截图
+## Screenshots 
 
-## 如何运行
+## How to Run
 
-- 克隆这个仓库，然后打开项目
-- 在 leap.as 控制台中创建一个应用，下面称他为 LAS 应用。如果已经创建，跳过这个步骤。
-- 在 `AppDelegate.` 中填写 LAS 应用的 applicationId 和 clientKey.
-- 按下 Commond + R 按钮运行
+- Clone the repository and open the project.
+- Create an app in leap.as console and name it LAS App. You can skip this step if you've already created one.
+- Add your applicationID and clientKey of LAS App in `AppDelegate.`. 
+- Press Command + R to run it.
 
-## 了解更多
+## Learn More
 
-详细信息请查看官方 [LAS iOS 开发指南](https://leap.as/docs/cloudData/ios.html);
+Please check official [LAS iOS Guide](https://leap.as/docs/cloudData/ios.html) to learn more details.
