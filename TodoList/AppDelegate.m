@@ -22,8 +22,7 @@
     // ****************************************************************************
     // Uncommit fill in with your MaxLeap credentials:
     // ****************************************************************************
-    [MaxLeap setApplicationId:@"55b202f760b2173daeff03b1" clientKey:@"Yy1VSEJlUHNnQzFRcHBudTAzWGhSdw" site:MLSiteUS];
-//    [MaxLeap setApplicationId:@"561c726d169e7d00014b3232" clientKey:@"NnRWeXJfYTgzdi1fTXB5QkVCUWxaUQ" site:MLSiteCN];
+    [MaxLeap setApplicationId:@"561c726d169e7d00014b3232" clientKey:@"NnRWeXJfYTgzdi1fTXB5QkVCUWxaUQ" site:MLSiteCN];
     return YES;
 }
 

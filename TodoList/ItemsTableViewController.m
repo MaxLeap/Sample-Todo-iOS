@@ -146,7 +146,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     MLObject *item = self.items[indexPath.row];
     BOOL checked = [item[@"Status"] boolValue];
-    item[@"Status"] = @(!checked);
+    item[@"Status"] = @( (BOOL) ! checked );
     [item saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         if (succeeded) {
             [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewAutomaticDimension];
