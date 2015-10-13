@@ -44,15 +44,5 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
-	<key>ilsAppConfig</key>
-	<dict>
-		<key>appInfo</key>
-		<dict>
-			<key>ILSConnectEnvironment</key>
-			<string>pro</string>
-			<key>disableLASHttps</key>
-			<true/>
-		</dict>
-	</dict>
 </dict>
 </plist>
