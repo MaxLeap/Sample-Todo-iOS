@@ -44,6 +44,8 @@
     
     if ([MLUser currentUser]) {
         [self refresh];
+    } else {
+        [self showLoginView];
     }
 }
 
@@ -57,14 +59,6 @@
 
 - (void)showLoginView {
     [self performSegueWithIdentifier:@"showLoginView" sender:nil];
-}
-
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-    
-    if (![MLUser currentUser]) {
-        [self showLoginView];
-    }
 }
 
 - (void)logout {
