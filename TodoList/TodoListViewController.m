@@ -127,7 +127,7 @@
             [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
         } else {
             // error occurred
-            NSString *message = [NSString stringWithFormat:@"code: %d, %@", error.code, error.localizedDescription];
+            NSString *message = [NSString stringWithFormat:@"code: %ld, %@", (long)error.code, error.localizedDescription];
             UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Error" message:message delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
             [alertView show];
         }
@@ -180,7 +180,7 @@
                 [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
             } else {
                 // error occurred
-                NSString *message = [NSString stringWithFormat:@"code: %d, %@", error.code, error.localizedDescription];
+                NSString *message = [NSString stringWithFormat:@"code: %ld, %@", (long)error.code, error.localizedDescription];
                 UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Error" message:message delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
                 [alertView show];
             }
