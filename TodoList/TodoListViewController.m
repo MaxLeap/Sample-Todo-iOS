@@ -37,6 +37,10 @@
     [self.refreshControl addTarget:self action:@selector(refresh) forControlEvents:UIControlEventValueChanged];
     
     self.lists = [NSMutableArray array];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
     
     if ([MLUser currentUser]) {
         [self refresh];
