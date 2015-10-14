@@ -79,11 +79,9 @@
         return;
     }
     
-    // Create a query object for all Todo object order by seq number descending.
+    // Create a query object for all Todo object order by updatedAt descending.
     MLQuery *query = [MLQuery queryWithClassName:@"Lists"];
-    [query whereKey:@"owner" equalTo:[MLUser currentUser]];
     [query orderByDescending:@"updatedAt"];
-    
     if (query) {
         // Run the query
         [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
@@ -111,9 +109,9 @@
 
 - (void)addAListWithName:(NSString *)name {
     
-    // Create an object with class name "Todo"
+    // Create an object with class name "Lists"
+    // The ACL of class "Lists" has been set to "Private(only creator have access)" on the console.
     MLObject *list = [MLObject objectWithClassName:@"Lists"];
-    list[@"owner"] = [MLUser currentUser];
     if (name) {
         list[@"Name"] = name;
     }
