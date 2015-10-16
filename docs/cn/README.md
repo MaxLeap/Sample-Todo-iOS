@@ -16,6 +16,10 @@
 
 ## 效果截图
 
+![](../images/1.png)
+![](../images/2.png)
+![](../images/3.png)
+
 ## 如何运行
 
 - 克隆这个仓库，然后打开项目
@@ -25,4 +29,4 @@
 
 ## 了解更多
 
-详细信息请查看官方 [LAS iOS 开发指南](https://leap.as/docs/cloudData/ios.html);
+详细信息请查看官方 [MaxLeap iOS 开发指南](https://maxleap.cn/zh_cn/guide/devguide/ios.html);

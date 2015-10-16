@@ -15,6 +15,10 @@ This project teaches you how to sign in and sign up, and display a list, add or 
 
 ## Screenshots 
 
+![](../images/1.png)
+![](../images/2.png)
+![](../images/3.png)
+
 ## How to Run
 
 - Clone the repository and open the project.
@@ -24,4 +28,4 @@ This project teaches you how to sign in and sign up, and display a list, add or 
 
 ## Learn More
 
-Please check official [MaxLeap iOS Guide](https://maxleap.cn/zh_cn/guide/devguide/ios.html) to learn more details.
+Please check official [MaxLeap iOS Guide](https://maxleap.cn/en_us/guide/devguide/ios.html) to learn more details.
