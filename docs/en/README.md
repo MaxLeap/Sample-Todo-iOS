@@ -8,7 +8,6 @@ This project teaches you how to sign in and sign up, and display a list, add or 
 
 - Sign Up
 - Sign In
-- Password Reset
 - Create MLObject, create a todo list or item
 - Add Relation to MLObjects
 - Query MLObject

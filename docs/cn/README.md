@@ -8,7 +8,6 @@
 
 - 用户注册
 - 用户登陆
-- 重设密码，给用户发送一封重设密码的电子邮件
 - 创建 MLObject，创建 Todo List
 - 在表(Class)之间建立关系，关联 Item 到一个 Todo List
 - 更新 MLObject，将 Item 标记为已完成
