@@ -1,14 +1,19 @@
-# LAS-Sample-Todo-iOS
+# Sample-Todo-iOS
 
 ## 介绍
 
-这个项目介绍如何使用 LAS 展示一个列表，并向其中添加或者删除元素。
+这个项目介绍如何使用 MaxLeap 实现用户注册和登陆，以及如何展示一个列表，并向其中添加或者删除元素。
 
 ## 演示功能
 
-- 创建 LASObject
-- 查询 LASObject
-- 删除 LASObject
+- 用户注册
+- 用户登陆
+- 重设密码，给用户发送一封重设密码的电子邮件
+- 创建 MLObject，创建 Todo List
+- 在表(Class)之间建立关系，关联 Item 到一个 Todo List
+- 更新 MLObject，将 Item 标记为已完成
+- 查询 MLObject，查询用户自己创建的 Todo List 以及与 List 相关联的 Items
+- 删除 MLObject，删除 Todo List 以及 Item
 
 ## 效果截图
 
@@ -17,7 +22,7 @@
 - 克隆这个仓库，然后打开项目
 - 在 leap.as 控制台中创建一个应用，下面称他为 LAS 应用。如果已经创建，跳过这个步骤。
 - 在 `AppDelegate.` 中填写 LAS 应用的 applicationId 和 clientKey.
-- 按下 Commond + R 按钮运行
+- 按下 <kbd>Commond</kbd> + <kbd>R</kbd> 按钮运行
 
 ## 了解更多
 
