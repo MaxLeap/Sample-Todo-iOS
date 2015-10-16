@@ -1,31 +1,32 @@
 # Sample-Todo-iOS
 
-## Overview
+## 介绍
 
-This project teaches you how to sign in and sign up, and display a list, add or delete an element using MaxLeap.
+这个项目介绍如何使用 MaxLeap 实现用户注册和登陆，以及如何展示一个列表，并向其中添加或者删除元素。
 
-## Features
+## 演示功能
 
-- Sign Up
-- Sign In
-- Create MLObject, create a todo list or item
-- Add Relation to MLObjects
-- Query MLObject
-- Delete MLObject
+- 用户注册
+- 用户登陆
+- 创建 MLObject，创建 Todo List
+- 在表(Class)之间建立关系，关联 Item 到一个 Todo List
+- 更新 MLObject，将 Item 标记为已完成
+- 查询 MLObject，查询用户自己创建的 Todo List 以及与 List 相关联的 Items
+- 删除 MLObject，删除 Todo List 以及 Item
 
-## Screenshots 
+## 效果截图
 
 ![](docs/images/1.png)
 ![](docs/images/2.png)
 ![](docs/images/3.png)
 
-## How to Run
+## 如何运行
 
-- Clone the repository and open the project.
-- Create an app in leap.as console and name it MaxLeap App. You can skip this step if you've already created one.
-- Add your applicationID and clientKey of MaxLeap App in `AppDelegate.`. 
-- Press <kbd>Command</kbd> + <kbd>R</kbd> to run it.
+- 克隆这个仓库，然后打开项目
+- 在 leap.as 控制台中创建一个应用，下面称他为 LAS 应用。如果已经创建，跳过这个步骤。
+- 在 `AppDelegate.` 中填写 LAS 应用的 applicationId 和 clientKey.
+- 按下 <kbd>Commond</kbd> + <kbd>R</kbd> 按钮运行
 
-## Learn More
+## 了解更多
 
-Please check official [MaxLeap iOS Guide](https://maxleap.cn/en_us/guide/devguide/ios.html) to learn more details.
+详细信息请查看官方 [MaxLeap iOS 开发指南](https://maxleap.cn/zh_cn/guide/devguide/ios.html);
