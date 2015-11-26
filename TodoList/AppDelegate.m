@@ -22,7 +22,7 @@
     // ****************************************************************************
     // Uncommit fill in with your MaxLeap credentials:
     // ****************************************************************************
-    [MaxLeap setApplicationId:@"561c726d169e7d00014b3232" clientKey:@"NnRWeXJfYTgzdi1fTXB5QkVCUWxaUQ" site:MLSiteCN];
+    [MaxLeap setApplicationId:@"56566c27169e7d00017cb5a3" clientKey:@"eXE2S3JYRFk4M1FaRFFUSUlkYlN3QQ" site:MLSiteCN];
     return YES;
 }
 

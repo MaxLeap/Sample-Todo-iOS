@@ -23,7 +23,12 @@
 ## 如何运行
 
 - 克隆这个仓库，然后打开项目
-- 在 [MaxLeap 开发者控制台](https://maxleap.cn) 中创建一个应用，下面称他为 MaxLeap 应用。如果已经创建，跳过这个步骤。
+- 前往 [MaxLeap 开发者控制台](https://maxleap.cn)，创建一个应用，下面称他为 MaxLeap 应用。如果已经创建，跳过这个步骤。
+- **重要：**前往开发者中心创建必要的类(数据表)<br>
+	- 点击`添加类`按钮，创建 `Items` 类<br>
+	点击`添加列`按钮，添加 `Name` 列，类型为 `String`<br>
+	继续添加列，`Status`，`Boolean` 类型<br>
+	- 然后再添加类 `Lists`, 接着依次添加列：列名称 `Name`, `String` 类型；列名称 `Items`, `Relation` 类型，目标类 `Items`
 - 在 `AppDelegate.` 中填写 MaxLeap 应用的 `applicationId` 和 `clientKey`, 并根据应用地区选择 `site`(`MLSiteUS`, `MLSiteCN`).
 - 按下 <kbd>Commond</kbd> + <kbd>R</kbd> 按钮运行
 
