@@ -1,0 +1,10 @@
+PODS:
+  - MaxLeap (2.0.8)
+
+DEPENDENCIES:
+  - MaxLeap (~> 2.0)
+
+SPEC CHECKSUMS:
+  MaxLeap: 9ef9201e00dbaca8de74f51a47ed8699e283efc2
+
+COCOAPODS: 0.39.0

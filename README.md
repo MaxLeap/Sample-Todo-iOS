@@ -41,6 +41,13 @@
 	Items|Relation, 目标类：`Items`
 	
 - 在 `AppDelegate.` 中填写 MaxLeap 应用的 `applicationId` 和 `clientKey`, 并根据应用地区选择 `site`(`MLSiteUS`, `MLSiteCN`).
+- 打开`终端`应用，执行以下命令</br>
+
+	```
+	$ cd Sample-Todo-iOS
+	$ pod install
+	```
+	
 - 按下 <kbd>Commond</kbd> + <kbd>R</kbd> 按钮运行
 
 ## 了解更多
