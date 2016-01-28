@@ -68,7 +68,7 @@
 
 - (void)addButtonClicked:(id)sender {
     
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"New ToDo List" message:@"Title for new list:" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Create", nil];
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"New ToDo Item" message:@"Title for new item:" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Create", nil];
     alertView.alertViewStyle = UIAlertViewStylePlainTextInput;
     alertView.tag = 101;
     [alertView show];

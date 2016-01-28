@@ -22,6 +22,18 @@
     [super awakeFromNib];
 }
 
+- (BOOL)isLoggedIn {
+    return [MLUser currentUser] &&  ! [MLAnonymousUtils isLinkedWithUser:[MLUser currentUser]];
+}
+
+- (MLUser *)currentUser {
+    if ([self isLoggedIn]) {
+        return [MLUser currentUser];
+    } else {
+        return nil;
+    }
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
@@ -37,14 +49,16 @@
     [self.refreshControl addTarget:self action:@selector(refresh) forControlEvents:UIControlEventValueChanged];
     
     self.lists = [NSMutableArray array];
+    
+    if ([self isLoggedIn]) {
+        [self refresh];
+    }
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
-    if ([MLUser currentUser]) {
-        [self refresh];
-    } else {
+    if (! [self isLoggedIn]) {
         [self showLoginView];
     }
 }
@@ -74,7 +88,7 @@
         [self.tableView setContentOffset:CGPointMake(0, self.tableView.contentOffset.y-self.refreshControl.frame.size.height) animated:YES];
     }
     
-    if (![MLUser currentUser]) {
+    if ( ! [self isLoggedIn]) {
         [self.refreshControl endRefreshing];
         return;
     }
