@@ -7,7 +7,6 @@
 //
 
 #import "LoginViewController.h"
-#import "SignUpViewController.h"
 #import <MaxLeap/MaxLeap.h>
 
 @interface LoginViewController () <UITextFieldDelegate>
@@ -55,6 +54,7 @@
     [MLUser logInWithUsernameInBackground:username password:password block:^(MLUser *user, NSError *error) {
         if (user) {
             NSLog(@"user: %@, isNew: %d", user, user.isNew);
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"MLUserDidLoginNotification" object:self];
             [self dismissViewControllerAnimated:YES completion:nil];
         } else {
             UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Login Failed" message:[NSString stringWithFormat:@"Code: %ld\n%@", (long)error.code, error.localizedDescription] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];

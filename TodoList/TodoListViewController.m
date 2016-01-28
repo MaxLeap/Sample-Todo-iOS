@@ -34,6 +34,15 @@
     }
 }
 
+- (void)observeLoginOrSignupNotifications {
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refresh) name:@"MLUserDidLoginNotification" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refresh) name:@"MLUserDidSignupNotification" object:nil];
+}
+
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
@@ -53,6 +62,7 @@
     if ([self isLoggedIn]) {
         [self refresh];
     }
+    [self observeLoginOrSignupNotifications];
 }
 
 - (void)viewDidAppear:(BOOL)animated {

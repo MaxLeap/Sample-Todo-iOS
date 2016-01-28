@@ -59,6 +59,7 @@
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Failed" message:[NSString stringWithFormat:@"Code: %ld\n%@", (long)error.code, error.localizedDescription] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
             [alert show];
         } else {
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"MLUserDidSignupNotification" object:self];
             [self dismissViewControllerAnimated:YES completion:nil];
         }
     }];
