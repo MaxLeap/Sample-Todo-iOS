@@ -1,9 +1,9 @@
 //
 //  ItemsTableViewController.m
-//  LASTodoList
+//  TodoList
 //
 //  Created by Sun Jin on 10/13/15.
-//  Copyright © 2015 ilegendsoft. All rights reserved.
+//  Copyright © 2015 MaxLeap. All rights reserved.
 //
 
 #import "ItemsTableViewController.h"

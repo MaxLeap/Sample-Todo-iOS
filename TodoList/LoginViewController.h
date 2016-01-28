@@ -1,9 +1,9 @@
 //
 //  UserLoginTestViewController.h
-//  MaxLeap
+//  TodoList
 //
 //  Created by Sun Jin on 7/16/14.
-//  Copyright (c) 2014 iLegendsoft. All rights reserved.
+//  Copyright (c) 2014 MaxLeap. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

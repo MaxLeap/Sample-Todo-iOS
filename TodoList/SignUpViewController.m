@@ -3,7 +3,7 @@
 //  MaxLeap
 //
 //  Created by Sun Jin on 8/5/14.
-//  Copyright (c) 2014 iLegendsoft. All rights reserved.
+//  Copyright (c) 2014 MaxLeap. All rights reserved.
 //
 
 #import "SignUpViewController.h"
