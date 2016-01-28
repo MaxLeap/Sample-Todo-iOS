@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "C41C174FFCBB4ABF20FEA83815949E1FB0ACD4C8",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "C41C174FFCBB4ABF20FEA83815949E1FB0ACD4C8" : 0,
+    "E3EFFB387DA76908EE94FDE9B3F38B39D8DFA5A2" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "974BD0C9-BD8F-41E2-B083-1467D316F319",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "C41C174FFCBB4ABF20FEA83815949E1FB0ACD4C8" : "Sample-Todo-iOS\/",
+    "E3EFFB387DA76908EE94FDE9B3F38B39D8DFA5A2" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "TodoList",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "TodoList.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:MaxLeap\/Sample-Todo-iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C41C174FFCBB4ABF20FEA83815949E1FB0ACD4C8"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "gitlab.maxleap.com:AppTemplate\/MaxLeapEBusiness-iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E3EFFB387DA76908EE94FDE9B3F38B39D8DFA5A2"
+    }
+  ]
+}
