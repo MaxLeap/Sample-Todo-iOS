@@ -103,8 +103,11 @@
         return;
     }
     
-    // Create a query object for all Todo object order by updatedAt descending.
+    #warning 请前往 MaxLeap 控制台，确保 Lists 表的权限已经设置为 “私有“
+    
+    // Create a query object targeting Lists Class.
     MLQuery *query = [MLQuery queryWithClassName:@"Lists"];
+    // Sort the results ordering by updatedAt descending
     [query orderByDescending:@"updatedAt"];
     if (query) {
         // Run the query
